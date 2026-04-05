@@ -9,7 +9,10 @@ Template ini dibagi menjadi beberapa file terpisah untuk memudahkan manajemen da
 *   **`main.tex`**: File utama (master). Proses kompilasi (build) dilakukan pada file ini. File ini mengatur *package* yang digunakan dan menggabungkan semua bagian makalah.
 *   **`cover.tex`**: Berisi format halaman sampul depan (judul, nama, NIM, dosen pengampu, dll).
 *   **`kata-pengantar.tex`**: Berisi halaman Kata Pengantar.
-*   **`makalah.tex`**: Berisi batang tubuh makalah utama (BAB I Pendahuluan, BAB II Pembahasan, BAB III Penutup).
+*   **`makalah.tex`**: File penggabung (*wrapper*) untuk seluruh bab makalah.
+*   **`bab1.tex`**: Berisi BAB I Pendahuluan.
+*   **`bab2.tex`**: Berisi BAB II Pembahasan.
+*   **`bab3.tex`**: Berisi BAB III Penutup.
 *   **`referensi.bib`**: File database daftar pustaka/referensi dalam format BibTeX.
 *   **`logo_uin_antasari.png`**: File gambar logo universitas yang digunakan pada halaman *cover*.
 
@@ -19,7 +22,7 @@ Template ini dibagi menjadi beberapa file terpisah untuk memudahkan manajemen da
 2.  **Kompilasi**: Buka file `main.tex` di editor Anda, lalu lakukan proses *build* atau *compile*. Disarankan menggunakan *compiler* `latexmk` atau menggunakan urutan kompilasi: `pdflatex` $\rightarrow$ `biber` (untuk referensi) $\rightarrow$ `pdflatex` $\rightarrow$ `pdflatex`.
 3.  **Pengeditan**:
     *   Buka `cover.tex` dan sesuaikan data diri (Nama, NIM, Judul, dll).
-    *   Tulis isi makalah Anda dengan mengedit file `makalah.tex`.
+    *   Tulis isi makalah Anda dengan mengedit file `bab1.tex`, `bab2.tex`, dan `bab3.tex` sesuai dengan bagiannya masing-masing.
     *   Masukkan sumber referensi jurnal atau buku Anda ke dalam `referensi.bib`.
 
 ## Penggunaan Kutipan (Sitasi)
