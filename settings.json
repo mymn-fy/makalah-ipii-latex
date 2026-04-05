@@ -1,0 +1,71 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": ["latexmk"]
+    },
+    {
+      "name": "pdflatex",
+      "tools": ["pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoBuild.cleanAndRetry": true,
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.clean.enabled": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+
+  "latex-workshop.format.fixQuotes.enabled": false,
+  "latex-workshop.format.fixMath.enabled": false,
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "perl",
+  "latex-workshop.formatting.latexindent.args": [
+    "D:\\Download\\File Apps\\latexindent\\latexindent.pl",
+    "-c",
+    "%DIR%/",
+    "%TMPFILE%",
+    "-y=defaultIndent: '%INDENT%'"
+  ],
+
+  "latex-workshop.bibtex-format.sort.enabled": false,
+  "latex-workshop.bibtex-format.trailingComma": false,
+  "latex-workshop.bibtex-format.sortby": ["key"],
+  "latex-workshop.bibtex-format.handleDuplicates": "Highlight Duplicates",
+  "latex-workshop.bibtex-entries.first": ["xdata", "string"],
+  "latex-workshop.bibtex-format.tab": "2 spaces",
+  "latex-workshop.bibtex-format.align-equal.enabled": true,
+  "latex-workshop.bibtex-format.surround": "Curly braces",
+  "latex-workshop.bibtex-format.case.type": "lowercase",
+  "latex-workshop.bibtex-format.case.field": "lowercase",
+  "latex-workshop.bibtex-fields.sort.enabled": false,
+  "latex-workshop.bibtex-fields.order": [],
+
+  "editor.defaultFormatter": "James-Yu.latex-workshop",
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  }
+}

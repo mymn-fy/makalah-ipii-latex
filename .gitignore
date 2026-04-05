@@ -1,0 +1,28 @@
+# LaTeX build files and auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.run.xml
+*.synctex.gz
+*.toc
+*.out
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+
+# Temporary files / editor files
+__latexindent_temp*
+indent.log
+*.swp
+*.bak
+*~
+.DS_Store
+
+# Generated PDF files (uncomment if you want to ignore PDFs)
+# *.pdf

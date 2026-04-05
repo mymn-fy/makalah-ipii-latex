@@ -1,0 +1,72 @@
+% main.tex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[top=3cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage{enumitem}
+\usepackage[notes,backend=biber,footmarkoff,isbn=false,url=false,doi=false,eprint=false]{biblatex-chicago}
+\addbibresource{referensi.bib}
+\usepackage{needspace}
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\bfseries}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsecdotsep}{\cftdotsep}
+\setlength{\cftsubsecindent}{1cm}
+\setlength{\cftbeforesecskip}{0pt}
+\setlength{\cftbeforesubsecskip}{0pt}
+
+\addtolength{\skip\footins}{0.5cm}
+\addtolength{\footnotesep}{5pt}
+\newlength{\myparindent}
+\setlength{\myparindent}{\parindent}
+\makeatletter
+\renewcommand{\@makefntext}[1]{%
+    \noindent
+    \hspace{0.7cm}
+    \makebox[0.3cm][l]{$^{\@thefnmark}$} 
+    #1
+}
+\makeatother
+
+\newcounter{huruf}
+\renewcommand{\thehuruf}{\Alph{huruf}}
+\newcommand{\hurufsection}[2]{
+    \needspace{5\baselineskip}
+    \stepcounter{huruf}
+    \addcontentsline{toc}{subsection}{\thehuruf. \hspace{0.5em} #1}
+    \begin{itemize}[label=\textbf{\thehuruf.}, leftmargin=0.8cm, align=left, nosep, listparindent=1cm]
+        \item \textbf{#1} \par
+        #2
+    \end{itemize}
+}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+
+\defbibheading{tengah}{%
+    \begin{center}
+    \textbf{DAFTAR PUSTAKA}
+    \addcontentsline{toc}{section}{DAFTAR PUSTAKA}
+    \end{center}
+}
+
+\begin{document}
+\input{cover.tex}
+\pagenumbering{roman}
+\input{kata-pengantar.tex}
+\newpage
+\renewcommand{\contentsname}{DAFTAR ISI}
+\addcontentsline{toc}{section}{DAFTAR ISI}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\input{makalah.tex}
+\newpage
+\printbibliography[heading=tengah]
+\end{document}

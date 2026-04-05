@@ -1,0 +1,60 @@
+% !TeX root = main.tex
+% cover.tex
+\begin{titlepage}
+	% Kita paksa margin cover agar simetris (tengah) khusus di halaman ini
+	\newgeometry{top=4cm, bottom=3cm, left=4cm, right=3cm}
+
+	\thispagestyle{empty}
+	\setstretch{1.0} % Cover biasanya spasi 1 (Single) agar tidak terlalu melar
+
+	\noindent
+	\begin{minipage}[t]{0.5\textwidth}
+		\raggedright%
+		\underline{\textbf{TUGAS TERSTRUKTUR}}\\
+		\textbf{NAMA MATA KULIAH}
+	\end{minipage}%
+	\begin{minipage}[t]{0.5\textwidth}
+		\raggedleft%
+		\underline{\textbf{DOSEN PENGAMPU}}\\
+		\textbf{NAMA DOSEN (T.G)}
+	\end{minipage}%
+	\begin{center}
+		\vspace{1.5cm}
+
+		\textbf{JUDUL MAKALAH TEKNOLOGI INFORMASI PERPUSTAKAAN}
+
+		\vspace{1.5cm}
+
+		\textbf{OLEH:}\\
+		\vspace{0.5cm}
+		\begin{center}
+
+			\begin{tabular}{l @{\hspace{0.5cm}} c @{\hspace{0.5cm}} l}
+
+				\textbf{AHMAD MUHAIMIN} & \textbf{:} & \textbf{NIM 230101120494} \\
+
+				\textbf{AHMAD YAJID}    & \textbf{:} & \textbf{NIM 230101120505} \\
+
+				\textbf{AKMAL}          & \textbf{:} & \textbf{NIM 230101120512} \\
+			\end{tabular}
+
+		\end{center}
+
+		\vfill % Menggunakan vfill agar logo & teks bawah otomatis terdorong ke bawah
+
+		\includegraphics[width=2.55cm,height=6cm]{logo_uin_antasari.png} % Ukuran logo biasanya lebih lebar
+
+		\vfill
+
+		\textbf{
+			UNIVERSITAS ISLAM NEGERI ANTASARI\\
+			FAKULTAS TARBIYAH DAN KEGURUAN\\
+			PROGRAM STUDI ILMU PERPUSTAKAAN\\
+			DAN INFORMASI ISLAM\\
+			BANJARMASIN\\
+			2026 M/1447 H
+		}
+	\end{center}
+
+	\restoregeometry%
+\end{titlepage}
