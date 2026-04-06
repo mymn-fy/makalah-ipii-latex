@@ -1,7 +1,7 @@
 % main.tex
 \documentclass[12pt,a4paper]{article}
 
-\usepackage[top=3cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\usepackage[top=4cm, bottom=3cm, left=4cm, right=3cm]{geometry}
 \usepackage{graphicx}
 \usepackage{times}
 \usepackage{setspace}
@@ -15,7 +15,9 @@
 \renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
 \renewcommand{\cftsecfont}{\normalfont}
 \renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftdotsep}{1.5}
 \renewcommand{\cftsecdotsep}{\cftdotsep}
+\renewcommand{\cftsecleader}{\normalfont\cftdotfill{\cftsecdotsep}}
 \setlength{\cftsubsecindent}{1cm}
 \setlength{\cftbeforesecskip}{0pt}
 \setlength{\cftbeforesubsecskip}{0pt}

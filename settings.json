@@ -51,9 +51,9 @@
     "-y=defaultIndent: '%INDENT%'"
   ],
 
-  "latex-workshop.bibtex-format.sort.enabled": false,
+  "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.bibtex-format.trailingComma": false,
-  "latex-workshop.bibtex-format.sortby": ["key"],
+  "latex-workshop.bibtex-format.sort.by": ["author", "year"],
   "latex-workshop.bibtex-format.handleDuplicates": "Highlight Duplicates",
   "latex-workshop.bibtex-entries.first": ["xdata", "string"],
   "latex-workshop.bibtex-format.tab": "2 spaces",
@@ -66,6 +66,9 @@
 
   "editor.defaultFormatter": "James-Yu.latex-workshop",
   "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[bibtex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   }
 }
